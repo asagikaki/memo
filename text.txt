@@ -1,0 +1,64 @@
+# memo
+
+
+考えてる言語仕様とか書くか
+C#ベースでpython混ぜた感じ（雑）unsafeなんて知るか
+GPPG/GPLEX使えば実装とか余裕でしょ（適当）
+
+基本式
+x.m　　　　　 メンバー
+x(a,b,c,...)  関数
+x\[i]　　　　　配列 
+(x?.m | x?\[i]  null 条件演算子) 
+x++ x--
+
+単項演算類 
++n
+-n 
+!b : true↔false
+(~i : 2の補数)
+(\[^i] : これ\[-i]で良くね?)
+++x --x
+(T)x (型キャスト)
+
+二項演算
+@
+**
+* / %
++ -
+(<< >>)
+< > <= =>
+== != 
+
+&
+|
+^ 
+&&
+||
+??
+a?b:c
+=
++=類 
+
+式
+if a==b:
+
+elif a==c:
+
+else:
+
+switch(a)
+     case 0:
+     
+     default:
+int i = 0 
+while(true)
+ i++
+ if i == 5 : continue
+ if i == 10: break
+ 
+ numbers<int> = for n in range(0,20) if n % 2 == 0;
+ for a in numbers:
+  
+return
+yield
