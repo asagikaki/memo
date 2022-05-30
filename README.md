@@ -78,7 +78,7 @@ max(...),min(...),clamp(...)
 
 ceil(x),floor(x)
 
-sgn(x)
+sgn(x),abs(x) :sgnはvec2の偏角、absはvec2の長さとしても使える
 
 sin(x),cos(x),tan(x)
 
@@ -147,7 +147,6 @@ r<t> : 最も近い過去のrを基準に、r,v,a,omegaから計算 r<T+1> = r<T
 ○x--
 
 ○-x
-○|x| (絶対値）
 
 ○!x (not)
 ○~x
@@ -169,8 +168,6 @@ r<t> : 最も近い過去のrを基準に、r,v,a,omegaから計算 r<T+1> = r<T
 ○x+y
 ○x-y
 
-○^x（符号？）
-
 ○(x<<y)
 ○(x>>y)
 
@@ -183,13 +180,11 @@ r<t> : 最も近い過去のrを基準に、r,v,a,omegaから計算 r<T+1> = r<T
 ○x == y
 ○x != y
 
-
+○x & y x ^ y x | y
 ○x && y x ^^ y x || y
-||は二つ使用してる時点で絶対値の可能性から除外する
-（|| = Token.OP_OR 、その次に | = Token.OP_ABS)
 
 ○x ? y : z
-if ~ :系は、:の次に何もない場合のみで
+if ~ :系とは、:の次が改行かどうかで判断
 
 配列操作式
 
