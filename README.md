@@ -1,6 +1,8 @@
 #* 実装型
+
 ◯int
-◯ouble
+
+◯double
 
 ◯vec2(x,y) 2次元ベクトル
 
